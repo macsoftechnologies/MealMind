@@ -1,0 +1,147 @@
+.weekly-plan {
+  margin-top: 30px;
+}
+
+.weekly-plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.weekly-plan-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.weekly-plan-header p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.weekly-note {
+  padding: 16px;
+  border-radius: 12px;
+  background: #ecfdf5;
+  margin-bottom: 20px;
+}
+
+.weekly-note p {
+  margin: 6px 0 0;
+}
+
+.weekly-days {
+  display: grid;
+  gap: 20px;
+}
+
+.weekly-day-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.weekly-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.weekly-day-header h3 {
+  margin: 0;
+}
+
+.weekly-day-header span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.day-calories {
+  font-weight: 600;
+}
+
+.weekly-meals {
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.weekly-meal {
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.meal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-heading h4 {
+  margin: 0;
+}
+
+.meal-heading span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.meal-foods {
+  margin-top: 12px;
+}
+
+.meal-food {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.meal-food small {
+  color: #64748b;
+}
+
+.meal-macros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.daily-tip {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f0fdf4;
+}
+
+.daily-tip p {
+  margin: 5px 0 0;
+}
+
+@media (max-width: 700px) {
+  .weekly-day-header,
+  .meal-heading,
+  .meal-food {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .meal-macros {
+    gap: 8px;
+  }
+}
+.meal-planned-time {
+  display: inline-block;
+  margin-top: 4px;
+
+  color: #16a34a;
+
+  font-size: 11px;
+  font-weight: 600;
+}

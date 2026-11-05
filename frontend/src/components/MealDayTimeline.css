@@ -1,0 +1,642 @@
+.meal-timeline-card {
+  max-width: 980px;
+  margin: 0 auto 28px;
+  padding: 22px 26px 26px;
+
+  background: #ffffff;
+  border: 1px solid #e8ecef;
+  border-radius: 18px;
+
+  box-shadow:
+    0 2px 8px rgba(15, 23, 42, 0.03),
+    0 10px 28px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.meal-timeline-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-bottom: 18px;
+  margin-bottom: 8px;
+
+  border-bottom: 1px solid #eef2f6;
+}
+
+.meal-timeline-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #059669;
+}
+
+.meal-timeline-heading h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.meal-timeline-header p {
+  margin: 5px 0 0 26px;
+
+  color: #7c8798;
+
+  font-size: 12px;
+}
+
+.meal-timeline-count {
+  padding: 6px 11px;
+
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  border-radius: 999px;
+
+  color: #15803d;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.meal-timeline {
+  padding-top: 6px;
+}
+
+.meal-timeline-row {
+  display: grid;
+
+  grid-template-columns:
+    62px
+    minmax(0, 1fr);
+
+  min-height: 68px;
+}
+
+.meal-timeline-time {
+  padding-top: 7px;
+  padding-right: 13px;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-align: right;
+
+  white-space: nowrap;
+}
+
+.meal-timeline-hour-content {
+  position: relative;
+
+  padding:
+    0
+    0
+    12px
+    20px;
+
+  border-left: 1px solid #e2e8f0;
+}
+
+.meal-timeline-line {
+  position: absolute;
+
+  top: 12px;
+  left: 0;
+  right: 0;
+
+  height: 1px;
+
+  background: #eef2f6;
+}
+
+
+/* =========================
+   MEAL EVENT
+========================= */
+
+.timeline-meal-event {
+  position: relative;
+
+  z-index: 2;
+
+  margin:
+    20px
+    0
+    3px;
+
+  max-width: 600px;
+}
+
+.timeline-meal-marker {
+  position: absolute;
+
+  top: 17px;
+  left: -26px;
+
+  width: 11px;
+  height: 11px;
+
+  background: #10b981;
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 0 2px #a7f3d0;
+}
+
+.timeline-meal-event-content {
+  padding: 13px 15px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #d1fae5;
+  border-left: 3px solid #10b981;
+
+  border-radius: 10px;
+}
+
+.timeline-meal-event-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.timeline-meal-event-top > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.timeline-meal-status {
+  color: #059669;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.07em;
+}
+
+.timeline-meal-event-top strong {
+  color: #172033;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.timeline-meal-clock {
+  color: #64748b;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.timeline-meal-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 9px;
+}
+
+.timeline-meal-meta span {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   EMPTY DAY
+========================= */
+
+.meal-timeline-empty {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 26px 6px 8px;
+}
+
+.meal-timeline-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+
+  color: #94a3b8;
+}
+
+.meal-timeline-empty strong {
+  color: #334155;
+
+  font-size: 13px;
+}
+
+.meal-timeline-empty p {
+  margin: 3px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 560px) {
+  .meal-timeline-card {
+    padding:
+      18px
+      14px
+      20px;
+
+    border-radius: 16px;
+  }
+
+  .meal-timeline-header {
+    gap: 10px;
+  }
+
+  .meal-timeline-heading h2 {
+    font-size: 14px;
+  }
+
+  .meal-timeline-header p {
+    margin-left: 0;
+  }
+
+  .meal-timeline-row {
+    grid-template-columns:
+      48px
+      minmax(0, 1fr);
+  }
+
+  .meal-timeline-time {
+    padding-right: 9px;
+
+    font-size: 9px;
+  }
+
+  .meal-timeline-hour-content {
+    padding-left: 14px;
+  }
+
+  .timeline-meal-marker {
+    left: -20px;
+  }
+
+  .timeline-meal-event-top {
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+  .timeline-meal-clock {
+    order: -1;
+  }
+}
+
+/* =========================================
+   PLANNED MEALS
+========================================= */
+
+.planned-meals-section {
+  margin: 18px 0 20px;
+  padding: 16px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e8edf2;
+  border-radius: 14px;
+}
+
+.planned-meals-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 13px;
+}
+
+.planned-meals-section-header h3 {
+  margin: 2px 0 0;
+
+  color: #172033;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.planned-meals-eyebrow {
+  color: #059669;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.planned-meals-count {
+  padding: 5px 9px;
+
+  background: #ecfdf5;
+  border: 1px solid #d1fae5;
+  border-radius: 999px;
+
+  color: #047857;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* Planned cards */
+
+.planned-meals-list {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(190px, 1fr)
+    );
+
+  gap: 9px;
+}
+
+.planned-meal-card {
+  padding: 12px 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+}
+
+.planned-meal-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.planned-meal-card-top > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.planned-meal-card strong {
+  color: #1e293b;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.planned-meal-badge {
+  color: #059669;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 0.07em;
+}
+
+.planned-meal-calories {
+  display: flex;
+  align-items: center;
+
+  gap: 3px;
+
+  color: #64748b;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* Food list */
+
+.planned-meal-foods {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  margin-top: 9px;
+}
+
+.planned-meal-foods span {
+  color: #475569;
+
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+
+/* Macros */
+
+.planned-meal-macros {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 9px;
+  padding-top: 8px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+.planned-meal-macros span {
+  color: #94a3b8;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+
+/* Loading / no plan */
+
+.planned-meals-loading,
+.no-planned-meals {
+  margin: 16px 0;
+
+  padding: 12px 14px;
+
+  background: #f8fafc;
+
+  border: 1px dashed #e2e8f0;
+  border-radius: 10px;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+
+@media (max-width: 560px) {
+  .planned-meals-list {
+    grid-template-columns: 1fr;
+  }
+
+  .planned-meals-section {
+    padding: 12px;
+  }
+}
+
+/* ========================================
+   PLANNED MEAL TIMELINE EVENT
+======================================== */
+
+.timeline-planned-event {
+  position: relative;
+  z-index: 2;
+
+  max-width: 600px;
+  margin: 10px 0;
+}
+
+.timeline-planned-marker {
+  position: absolute;
+
+  top: 16px;
+  left: -26px;
+
+  width: 10px;
+  height: 10px;
+
+  background: #ffffff;
+
+  border: 2px solid #10b981;
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 3px #ecfdf5;
+}
+
+.timeline-planned-content {
+  padding: 12px 14px;
+
+  background: #f8fffb;
+
+  border: 1px dashed #a7f3d0;
+  border-left: 3px solid #10b981;
+
+  border-radius: 10px;
+}
+
+.timeline-planned-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+.timeline-planned-top > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.timeline-planned-status {
+  color: #059669;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.timeline-planned-top strong {
+  color: #1e293b;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.timeline-planned-time {
+  color: #059669;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.timeline-planned-foods {
+  margin: 7px 0 0;
+
+  color: #64748b;
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.timeline-planned-meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 8px;
+}
+
+.timeline-planned-meta span {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 4px;
+
+  color: #64748b;
+
+  font-size: 10px;
+  font-weight: 600;
+}

@@ -1,0 +1,117 @@
+.diet-calendar {
+  margin-top: 30px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+}
+
+.calendar-header p {
+  color: #64748b;
+}
+
+.calendar-header input {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.selected-day {
+  margin-top: 20px;
+}
+
+.selected-day-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-day-title h3 {
+  margin: 0;
+}
+
+.daily-summary {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.summary-card {
+  padding: 15px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.summary-card span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.summary-card strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.planned-actual-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.day-column h3 {
+  margin-bottom: 12px;
+}
+
+.calendar-meal-card {
+  padding: 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar-meal-card p {
+  margin: 7px 0;
+}
+
+.calendar-meal-card small {
+  color: #64748b;
+}
+
+.calendar-message {
+  margin-top: 20px;
+  padding: 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .calendar-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .daily-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .planned-actual-grid {
+    grid-template-columns: 1fr;
+  }
+}
