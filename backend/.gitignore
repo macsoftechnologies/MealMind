@@ -7,3 +7,8 @@ node_modules/
 __pycache__/
 dist/
 *.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
